@@ -1,3 +1,6 @@
+# GUstavo Viana do Nascimento
+
+
 def lerLinhaTexto_1():
   
   texto_1 = open("texto_1.txt","w+")
