@@ -1,0 +1,113 @@
+def lerLinhaTexto_1():
+  
+  texto_1 = open("texto_1.txt","w+")
+  
+  lerLinhasArquivo = ["abbababab","abbabbab","abbababbb"]
+  
+  tamanho = len(lerLinhasArquivo[0])
+
+  contador = 0
+  while contador < tamanho:
+    if lerLinhasArquivo[0][contador] == 'a' and lerLinhasArquivo[0][contador+1] == 'b' and lerLinhasArquivo[0][contador+2] == 'a':
+      print("não pertence")
+    elif lerLinhasArquivo[0][contador] == 'a' and lerLinhasArquivo[0][contador+1] == 'a' and lerLinhasArquivo[0][contador+2] == 'b':
+      print("não pertence")
+    elif lerLinhasArquivo[0][contador] == 'a' and lerLinhasArquivo[0][contador+1] == 'a' and lerLinhasArquivo[0][contador+2] == 'a':
+      print("não pertence")
+    elif lerLinhasArquivo[0][contador] == 'b' and lerLinhasArquivo[0][contador+1] == 'a' and lerLinhasArquivo[0][contador+2] == 'b' and lerLinhasArquivo[0][contador+3] == 'a':
+      print(lerLinhasArquivo[0], "Não pertence")
+    else:
+      print(lerLinhasArquivo[0], "Não pertence")
+      break
+    contador = contador + 1
+    
+  while contador < tamanho:
+    if lerLinhasArquivo[1][contador] == 'a' and lerLinhasArquivo[1][contador+1] == 'b' and lerLinhasArquivo[1][contador+2] == 'a':
+      print("não pertence")
+    elif lerLinhasArquivo[1][contador] == 'a' and lerLinhasArquivo[1][contador+1] == 'a' and lerLinhasArquivo[1][contador+2] == 'b':
+      print("não pertence")
+    elif lerLinhasArquivo[1][contador] == 'a' and lerLinhasArquivo[1][contador+1] == 'a' and lerLinhasArquivo[1][contador+2] == 'a':
+      print("não pertence")
+    elif lerLinhasArquivo[1][contador] == 'b' and lerLinhasArquivo[1][contador+1] == 'a' and lerLinhasArquivo[1][contador+2] == 'b' and lerLinhasArquivo[1][contador+3] == 'a':
+      print(lerLinhasArquivo[1], "pertence")
+    else:
+      print(lerLinhasArquivo[1], "Não pertence")
+      break
+    contador = contador + 1
+
+  while contador < tamanho:
+    if lerLinhasArquivo[2][contador] == 'a' and lerLinhasArquivo[2][contador+2] == 'b' and lerLinhasArquivo[2][contador+2] == 'a':
+      print("não pertence")
+    elif lerLinhasArquivo[2][contador] == 'a' and lerLinhasArquivo[2][contador+2] == 'a' and lerLinhasArquivo[2][contador+2] == 'b':
+      print("não pertence")
+    elif lerLinhasArquivo[2][contador] == 'a' and lerLinhasArquivo[2][contador+2] == 'a' and lerLinhasArquivo[2][contador+2] == 'a':
+      print("não pertence")
+    elif lerLinhasArquivo[2][contador] == 'b' and lerLinhasArquivo[2][contador+2] == 'a' and lerLinhasArquivo[2][contador+2] == 'b' and lerLinhasArquivo[2][contador+3] == 'a':
+      print(lerLinhasArquivo[2], "n pertence")
+    else:
+      print(lerLinhasArquivo[2], "pertence")
+      break
+    contador = contador + 1
+    
+  for linhas in lerLinhasArquivo:
+    
+      texto_1.write(linhas)
+    
+      texto_1.write("\n")
+        
+  texto_1.close()
+  
+  return texto_1
+
+def lerLinhaTexto_2():
+  
+  texto_2 = open("texto_2.txt","w+")
+  
+  lerLinhasArquivo = ["abbabba","abbabbabb","abbabbabaab"]
+  
+  tamanho = len(lerLinhasArquivo[0])
+  
+  print("String de ", tamanho)
+  
+  for linhas in lerLinhasArquivo:
+    
+      texto_2.write(linhas)
+    
+      texto_2.write("\n")
+    
+      print(linhas)
+    
+  texto_2.close()
+  
+  return texto_2
+
+def lerLinhaTexto_3():
+  
+  texto_3 = open("texto_3.txt","w+")
+  
+  lerLinhasArquivo = ["abbabbabababbab","abacacbabba","abbacababb"]
+  
+  tamanho = len(lerLinhasArquivo[0])
+  
+  print("String de ", tamanho)
+  
+  for linhas in lerLinhasArquivo:
+    
+      texto_3.write(linhas)
+    
+      texto_3.write("\n")
+    
+      print(linhas)
+    
+  texto_3.close()
+  
+  return texto_3
+
+lerLinhaTexto_1()
+
+print("\n")
+
+lerLinhaTexto_2()
+
+print("\n")
+lerLinhaTexto_3()
